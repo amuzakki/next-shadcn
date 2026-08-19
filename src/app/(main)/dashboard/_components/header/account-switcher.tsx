@@ -35,7 +35,7 @@ export function AccountSwitcher({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Avatar className="size-8 rounded-lg">
+        <Avatar className="size-8 rounded-lg cursor-pointer">
           <AvatarImage src={activeUser.avatar || undefined} alt={activeUser.name} />
           <AvatarFallback>{getInitials(activeUser.name)}</AvatarFallback>
         </Avatar>

@@ -7,7 +7,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 
 export function SupportCard() {
   return (
-    <Card size="sm" className="overflow-hidden shadow-none group-data-[collapsible=icon]:hidden">
+    <Card size="sm" className="overflow-hidden shadow-none group-data-[collapsible=icon]:hidden hidden">
       <CardHeader className="min-w-0 px-4">
         <CardTitle className="truncate text-sm">Have something in mind?</CardTitle>
         <CardDescription className="line-clamp-3">
