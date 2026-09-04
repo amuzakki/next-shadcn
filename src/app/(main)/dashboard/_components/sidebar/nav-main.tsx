@@ -103,7 +103,7 @@ export function NavMain({ items }: NavMainProps) {
 
   return (
     <>
-      <SidebarGroup>
+      <SidebarGroup className="hidden">
         <SidebarGroupContent className="flex flex-col gap-2">
           <SidebarMenu>
             <SidebarMenuItem className="flex items-center gap-2">

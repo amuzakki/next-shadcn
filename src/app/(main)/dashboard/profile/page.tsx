@@ -50,7 +50,7 @@ export default function Page() {
       <Tabs className="min-h-0 flex-1 gap-0" defaultValue="overview">
         <div className="scrollbar-none touch-pan-x overflow-x-auto overscroll-x-contain border-y">
           <TabsList
-            className="w-max min-w-full justify-start gap-4 px-4 *:data-[slot=tabs-trigger]:flex-none"
+            className="w-max min-w-full justify-start gap-4 px-4 *:data-[slot=tabs-trigger]:flex-none group-data-horizontal/tabs:h-10"
             variant="line"
           >
             <TabsTrigger value="overview">Overview</TabsTrigger>

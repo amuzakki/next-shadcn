@@ -177,24 +177,22 @@ export const sidebarItems: NavGroup[] = [
         url: "/dashboard/invoice",
         icon: ReceiptText,
       },
-      {
-        id: "profile",
-        title: "Profile",
-        url: "/dashboard/profile",
-        icon: UserRound,
-        badge: "new",
-      },
+    ],
+  },
+  {
+    id: 5,
+    label: "User & Auth",
+    items: [
       {
         id: "users",
         title: "Users",
-        url: "/dashboard/users",
+        // url: "/dashboard/users",
         icon: Users,
-      },
-      {
-        id: "roles",
-        title: "Roles",
-        url: "/dashboard/roles",
-        icon: Lock,
+        subItems: [
+          { id: "all-users", title: "All Users", url: "/dashboard/users" },
+          { id: "profile", title: "Profile", url: "/dashboard/profile", badge: "new" },
+          { id: "roles", title: "Roles", url: "/dashboard/roles" },
+        ],
       },
       {
         id: "authentication",
@@ -229,6 +227,14 @@ export const sidebarItems: NavGroup[] = [
     id: 4,
     label: "Misc",
     items: [
+      {
+        id: "source-code",
+        title: "Source Code",
+        url: "https://github.com/arhamkhnz/next-shadcn-admin-dashboard",
+        icon: SquareArrowUpRight,
+        disabled: false,
+        newTab: true,
+      },
       {
         id: "others",
         title: "Others",
